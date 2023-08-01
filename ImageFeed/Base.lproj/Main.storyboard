@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Oz7-XB-msH">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="jvM-e4-LH5">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -85,18 +86,42 @@
                             <constraint firstItem="fHO-Tc-tDr" firstAttribute="bottom" secondItem="5D0-hL-0sE" secondAttribute="bottom" id="zDF-jp-av7"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_editorial_active" id="2r5-04-Tjg"/>
                     <connections>
                         <outlet property="tableView" destination="fHO-Tc-tDr" id="ddl-Rw-rek"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAy-xB-Q0K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="393" y="-585"/>
+            <point key="canvasLocation" x="-1424" y="-1004"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="nQl-5f-spv">
+            <objects>
+                <tabBarController id="jvM-e4-LH5" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hta-Jd-aKx">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" name="fon"/>
+                        <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <tabBarAppearance key="standardAppearance">
+                            <color key="backgroundColor" name="fon"/>
+                        </tabBarAppearance>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Oz7-XB-msH" kind="relationship" relationship="viewControllers" id="5PW-Pq-u0g"/>
+                        <segue destination="ML4-d4-NeS" kind="relationship" relationship="viewControllers" id="XjN-Pb-q1O"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="uNg-FI-NHU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2315" y="-526"/>
         </scene>
         <!--Profile-->
         <scene sceneID="smf-Qv-Ejv">
             <objects>
-                <viewController title="Profile" id="ML4-d4-NeS" customClass="ProfileViewController" customModule="Image_Feed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Profile" id="ML4-d4-NeS" customClass="ProfileViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="vzZ-8M-0G8">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -160,6 +185,7 @@
                             <constraint firstItem="zqq-m5-jg0" firstAttribute="top" secondItem="cck-En-zxq" secondAttribute="top" constant="32" id="vg1-8S-yue"/>
                         </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="" image="tab_profile_active" id="MXX-kR-oqD"/>
                     <navigationItem key="navigationItem" id="Ymu-Ey-vRm"/>
                     <connections>
                         <outlet property="avatarImageView" destination="zqq-m5-jg0" id="jpX-Eh-ej8"/>
@@ -171,7 +197,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="k85-fY-YBl" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-477" y="-585"/>
+            <point key="canvasLocation" x="-1424" y="-235"/>
         </scene>
     </scenes>
     <resources>
@@ -179,5 +205,10 @@
         <image name="avatar" width="70" height="70"/>
         <image name="like on" width="44" height="44"/>
         <image name="logout" width="44" height="44"/>
+        <image name="tab_editorial_active" width="75" height="49"/>
+        <image name="tab_profile_active" width="30" height="30"/>
+        <namedColor name="fon">
+            <color red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>
