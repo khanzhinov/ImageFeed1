@@ -44,15 +44,24 @@
 		1500A6342A7967BB00E37793 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				1500A6322A79679F00E37793 /* ProfileViewController.swift */,
+				1500A63B2A7979DF00E37793 /* ImagesList */,
 			);
 			path = Profile;
+			sourceTree = "<group>";
+		};
+		1500A63B2A7979DF00E37793 /* ImagesList */ = {
+			isa = PBXGroup;
+			children = (
+				1522F1662A75919100B71A17 /* ImagesListViewController.swift */,
+				1522F1682A7591A100B71A17 /* ImagesListCell.swift */,
+			);
+			path = ImagesList;
 			sourceTree = "<group>";
 		};
 		1522F1462A7590BD00B71A17 = {
 			isa = PBXGroup;
 			children = (
-				1522F1682A7591A100B71A17 /* ImagesListCell.swift */,
-				1522F1662A75919100B71A17 /* ImagesListViewController.swift */,
 				1522F1512A7590BD00B71A17 /* ImageFeed */,
 				1522F1502A7590BD00B71A17 /* Products */,
 			);
@@ -69,10 +78,9 @@
 		1522F1512A7590BD00B71A17 /* ImageFeed */ = {
 			isa = PBXGroup;
 			children = (
-				1500A6322A79679F00E37793 /* ProfileViewController.swift */,
-				1500A6342A7967BB00E37793 /* Profile */,
 				1522F1522A7590BD00B71A17 /* AppDelegate.swift */,
 				1522F1542A7590BD00B71A17 /* SceneDelegate.swift */,
+				1500A6342A7967BB00E37793 /* Profile */,
 				1522F1582A7590BD00B71A17 /* Main.storyboard */,
 				1522F15B2A7590BE00B71A17 /* Assets.xcassets */,
 				1522F15D2A7590BE00B71A17 /* LaunchScreen.storyboard */,
