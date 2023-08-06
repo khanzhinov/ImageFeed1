@@ -15,6 +15,7 @@
 		1522F15F2A7590BE00B71A17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1522F15D2A7590BE00B71A17 /* LaunchScreen.storyboard */; };
 		1522F1672A75919100B71A17 /* ImagesListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F1662A75919100B71A17 /* ImagesListViewController.swift */; };
 		1522F1692A7591A100B71A17 /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F1682A7591A100B71A17 /* ImagesListCell.swift */; };
+		1553A9472A7FF06100B7EF1B /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553A9462A7FF06100B7EF1B /* SingleImageViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		1522F1602A7590BE00B71A17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1522F1662A75919100B71A17 /* ImagesListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListViewController.swift; sourceTree = "<group>"; };
 		1522F1682A7591A100B71A17 /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
+		1553A9462A7FF06100B7EF1B /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				1522F1662A75919100B71A17 /* ImagesListViewController.swift */,
 				1522F1682A7591A100B71A17 /* ImagesListCell.swift */,
+				1553A9462A7FF06100B7EF1B /* SingleImageViewController.swift */,
 			);
 			path = ImagesList;
 			sourceTree = "<group>";
@@ -164,6 +167,7 @@
 				1522F1692A7591A100B71A17 /* ImagesListCell.swift in Sources */,
 				1500A6332A79679F00E37793 /* ProfileViewController.swift in Sources */,
 				1522F1532A7590BD00B71A17 /* AppDelegate.swift in Sources */,
+				1553A9472A7FF06100B7EF1B /* SingleImageViewController.swift in Sources */,
 				1522F1552A7590BD00B71A17 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
