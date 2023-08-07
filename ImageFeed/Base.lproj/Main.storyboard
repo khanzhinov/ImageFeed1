@@ -260,7 +260,7 @@
         <image name="avatar" width="70" height="70"/>
         <image name="like on" width="44" height="44"/>
         <image name="logout" width="44" height="44"/>
-        <image name="tab_editorial_active" width="75" height="49"/>
+        <image name="tab_editorial_active" width="30" height="30"/>
         <image name="tab_profile_active" width="30" height="30"/>
         <namedColor name="fon">
             <color red="0.10199999809265137" green="0.10599999874830246" blue="0.13300000131130219" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
