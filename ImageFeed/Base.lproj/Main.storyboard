@@ -89,7 +89,7 @@
                     <navigationItem key="navigationItem" id="4T4-Qh-6j6"/>
                     <connections>
                         <outlet property="tableView" destination="fHO-Tc-tDr" id="ddl-Rw-rek"/>
-                        <segue destination="dCp-R8-2Wd" kind="show" identifier="ShowSingleImage" id="pic-1f-zDM"/>
+                        <segue destination="dCp-R8-2Wd" kind="presentation" identifier="ShowSingleImage" id="pic-1f-zDM"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KAy-xB-Q0K" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -203,6 +203,7 @@
         <!--Navigation Controller-->
         <scene sceneID="Pjt-Yc-hhO">
             <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ycD-gA-xvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="ZB0-Jq-nb4" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="" image="tab_editorial_active" id="2r5-04-Tjg"/>
                     <toolbarItems/>
@@ -220,29 +221,42 @@
                         <segue destination="Oz7-XB-msH" kind="relationship" relationship="rootViewController" id="Uhd-F9-Uf4"/>
                     </connections>
                 </navigationController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ycD-gA-xvg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-1425.1908396946565" y="-1004.2253521126761"/>
         </scene>
         <!--Single Image View Controller-->
         <scene sceneID="gCC-vY-b6y">
             <objects>
-                <viewController id="dCp-R8-2Wd" customClass="SingleImageViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="dCp-R8-2Wd" customClass="SingleImageViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="MeS-Aw-Xzu">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="0" translatesAutoresizingMaskIntoConstraints="NO" id="P19-Bn-GoS">
-                                <rect key="frame" x="0.0" y="103" width="393" height="666"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCe-kI-BNO">
+                                <rect key="frame" x="8" y="8" width="48" height="48"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="48" id="Dhg-My-ljS"/>
+                                    <constraint firstAttribute="height" constant="48" id="Ms6-2I-n1I"/>
+                                </constraints>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="nav_back_button_white"/>
+                                <connections>
+                                    <action selector="didTapBackButton" destination="dCp-R8-2Wd" eventType="touchUpInside" id="aqN-hd-mMy"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MdM-RR-kNy"/>
                         <color key="backgroundColor" name="fon"/>
                         <constraints>
-                            <constraint firstItem="MdM-RR-kNy" firstAttribute="bottom" secondItem="P19-Bn-GoS" secondAttribute="bottom" id="0Ko-9B-dry"/>
-                            <constraint firstItem="P19-Bn-GoS" firstAttribute="top" secondItem="MdM-RR-kNy" secondAttribute="top" id="fes-Dj-oyT"/>
-                            <constraint firstItem="P19-Bn-GoS" firstAttribute="leading" secondItem="MdM-RR-kNy" secondAttribute="leading" id="j1J-BC-XqX"/>
-                            <constraint firstItem="MdM-RR-kNy" firstAttribute="trailing" secondItem="P19-Bn-GoS" secondAttribute="trailing" id="mGl-P5-QFS"/>
+                            <constraint firstAttribute="bottom" secondItem="P19-Bn-GoS" secondAttribute="bottom" id="0Ko-9B-dry"/>
+                            <constraint firstItem="eCe-kI-BNO" firstAttribute="top" secondItem="MdM-RR-kNy" secondAttribute="top" constant="8" id="DdW-XA-iNM"/>
+                            <constraint firstItem="P19-Bn-GoS" firstAttribute="top" secondItem="MeS-Aw-Xzu" secondAttribute="top" id="fes-Dj-oyT"/>
+                            <constraint firstItem="P19-Bn-GoS" firstAttribute="leading" secondItem="MeS-Aw-Xzu" secondAttribute="leading" id="j1J-BC-XqX"/>
+                            <constraint firstAttribute="trailing" secondItem="P19-Bn-GoS" secondAttribute="trailing" id="mGl-P5-QFS"/>
+                            <constraint firstItem="eCe-kI-BNO" firstAttribute="leading" secondItem="MdM-RR-kNy" secondAttribute="leading" constant="8" id="yLs-zu-kG0"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="fXq-FU-t6h"/>
@@ -260,6 +274,7 @@
         <image name="avatar" width="70" height="70"/>
         <image name="like on" width="44" height="44"/>
         <image name="logout" width="44" height="44"/>
+        <image name="nav_back_button_white" width="24" height="24"/>
         <image name="tab_editorial_active" width="30" height="30"/>
         <image name="tab_profile_active" width="30" height="30"/>
         <namedColor name="fon">
