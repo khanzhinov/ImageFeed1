@@ -224,6 +224,9 @@
                                 </constraints>
                                 <viewLayoutGuide key="contentLayoutGuide" id="11K-43-9Wk"/>
                                 <viewLayoutGuide key="frameLayoutGuide" id="Xtr-e9-Csj"/>
+                                <connections>
+                                    <outlet property="delegate" destination="dCp-R8-2Wd" id="om7-Rh-3gO"/>
+                                </connections>
                             </scrollView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eCe-kI-BNO">
                                 <rect key="frame" x="8" y="8" width="48" height="48"/>
@@ -237,6 +240,14 @@
                                     <action selector="didTapBackButton" destination="dCp-R8-2Wd" eventType="touchUpInside" id="aqN-hd-mMy"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p9-ey-8MW">
+                                <rect key="frame" x="171.33333333333334" y="766" width="50.333333333333343" height="50"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" image="share_button"/>
+                                <connections>
+                                    <action selector="didTapShareButton:" destination="dCp-R8-2Wd" eventType="touchUpInside" id="aYi-cA-qsQ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MdM-RR-kNy"/>
                         <color key="backgroundColor" name="fon"/>
@@ -244,8 +255,10 @@
                             <constraint firstAttribute="bottom" secondItem="bAN-gr-ZKB" secondAttribute="bottom" id="1ta-2n-gjp"/>
                             <constraint firstAttribute="top" secondItem="bAN-gr-ZKB" secondAttribute="top" id="Chs-O2-ajZ"/>
                             <constraint firstItem="eCe-kI-BNO" firstAttribute="top" secondItem="MdM-RR-kNy" secondAttribute="top" constant="8" id="DdW-XA-iNM"/>
+                            <constraint firstItem="MdM-RR-kNy" firstAttribute="bottom" secondItem="7p9-ey-8MW" secondAttribute="bottom" constant="36" id="G7l-Pa-Oe1"/>
                             <constraint firstAttribute="leading" secondItem="bAN-gr-ZKB" secondAttribute="leading" id="O2R-Ph-Xkx"/>
                             <constraint firstAttribute="trailing" secondItem="bAN-gr-ZKB" secondAttribute="trailing" id="ddN-XE-zb0"/>
+                            <constraint firstItem="7p9-ey-8MW" firstAttribute="centerX" secondItem="MdM-RR-kNy" secondAttribute="centerX" id="mwa-z7-oat"/>
                             <constraint firstItem="eCe-kI-BNO" firstAttribute="leading" secondItem="MdM-RR-kNy" secondAttribute="leading" constant="8" id="yLs-zu-kG0"/>
                         </constraints>
                     </view>
@@ -266,6 +279,7 @@
         <image name="like on" width="44" height="44"/>
         <image name="logout" width="44" height="44"/>
         <image name="nav_back_button_white" width="24" height="24"/>
+        <image name="share_button" width="50.333332061767578" height="50"/>
         <image name="tab_editorial_active" width="30" height="30"/>
         <image name="tab_profile_active" width="30" height="30"/>
         <namedColor name="fon">
