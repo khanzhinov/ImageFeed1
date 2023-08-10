@@ -241,7 +241,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7p9-ey-8MW">
-                                <rect key="frame" x="171.33333333333334" y="766" width="50.333333333333343" height="50"/>
+                                <rect key="frame" x="171.66666666666666" y="766" width="50" height="50"/>
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="share_button"/>
                                 <connections>

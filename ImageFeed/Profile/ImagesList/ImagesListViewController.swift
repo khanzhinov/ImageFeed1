@@ -24,13 +24,12 @@ class ImagesListViewController: UIViewController {
             super.prepare(for: segue, sender: sender)
         }
     }
-
     
     private let photosName: [String] = Array(0..<20).map{ "\($0)" }
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
-      }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -83,7 +82,6 @@ extension ImagesListViewController: UITableViewDelegate {
         tableView.deselectRow(at: indexPath, animated: true)
         performSegue(withIdentifier: ShowSingleImageSegueIdentifier, sender: indexPath)
     }
-
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         guard let image = UIImage(named: photosName[indexPath.row]) else {

@@ -17,6 +17,11 @@ final class SingleImageViewController: UIViewController {
             rescaleAndCenterImageInScrollView(image: image)
         }
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
+    
     @IBOutlet private weak var scrollView: UIScrollView!
     @IBOutlet private weak var imageView: UIImageView!
     @IBAction private func didTapBackButton() {
@@ -27,7 +32,7 @@ final class SingleImageViewController: UIViewController {
         super.viewDidLoad()
         imageView.image = image
         scrollView.minimumZoomScale = 0.1
-        scrollView.maximumZoomScale = 3.5
+        scrollView.maximumZoomScale = 8.5
         imageView.image = image
         rescaleAndCenterImageInScrollView(image: image)
     }
@@ -56,7 +61,6 @@ final class SingleImageViewController: UIViewController {
         let y = (newContentSize.height - visibleRectSize.height) / 2
         scrollView.setContentOffset(CGPoint(x: x, y: y), animated: false)
     }
-
 }
 
 extension SingleImageViewController: UIScrollViewDelegate {
