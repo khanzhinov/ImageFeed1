@@ -17,6 +17,7 @@
 		1522F1692A7591A100B71A17 /* ImagesListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F1682A7591A100B71A17 /* ImagesListCell.swift */; };
 		1553A9472A7FF06100B7EF1B /* SingleImageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1553A9462A7FF06100B7EF1B /* SingleImageViewController.swift */; };
 		157B30A32A8FA741002A7DDA /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A22A8FA741002A7DDA /* Constans.swift */; };
+		157B30A62A96108C002A7DDA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A52A96108C002A7DDA /* AuthViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		1522F1682A7591A100B71A17 /* ImagesListCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListCell.swift; sourceTree = "<group>"; };
 		1553A9462A7FF06100B7EF1B /* SingleImageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingleImageViewController.swift; sourceTree = "<group>"; };
 		157B30A22A8FA741002A7DDA /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		157B30A52A96108C002A7DDA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 			isa = PBXGroup;
 			children = (
 				1522F1522A7590BD00B71A17 /* AppDelegate.swift */,
+				157B30A42A961063002A7DDA /* Auth */,
 				1522F1542A7590BD00B71A17 /* SceneDelegate.swift */,
 				157B30A22A8FA741002A7DDA /* Constans.swift */,
 				1500A6342A7967BB00E37793 /* Profile */,
@@ -93,6 +96,14 @@
 				1522F1602A7590BE00B71A17 /* Info.plist */,
 			);
 			path = ImageFeed;
+			sourceTree = "<group>";
+		};
+		157B30A42A961063002A7DDA /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+				157B30A52A96108C002A7DDA /* AuthViewController.swift */,
+			);
+			path = Auth;
 			sourceTree = "<group>";
 		};
 		15DA3B012A818A71001F49CD /* SingleImageViewController */ = {
@@ -178,6 +189,7 @@
 				157B30A32A8FA741002A7DDA /* Constans.swift in Sources */,
 				1522F1692A7591A100B71A17 /* ImagesListCell.swift in Sources */,
 				1500A6332A79679F00E37793 /* ProfileViewController.swift in Sources */,
+				157B30A62A96108C002A7DDA /* AuthViewController.swift in Sources */,
 				1522F1532A7590BD00B71A17 /* AppDelegate.swift in Sources */,
 				1553A9472A7FF06100B7EF1B /* SingleImageViewController.swift in Sources */,
 				1522F1552A7590BD00B71A17 /* SceneDelegate.swift in Sources */,
