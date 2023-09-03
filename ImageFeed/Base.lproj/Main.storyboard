@@ -212,7 +212,7 @@
         <!--Auth View Controller-->
         <scene sceneID="Ars-jm-CO5">
             <objects>
-                <viewController id="6GO-M6-Ecy" userLabel="Auth View Controller" sceneMemberID="viewController">
+                <viewController id="6GO-M6-Ecy" userLabel="Auth View Controller" customClass="AuthViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mIh-fK-GK0">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -233,7 +233,7 @@
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
                                 </userDefinedRuntimeAttributes>
                                 <connections>
-                                    <segue destination="Vrd-en-zQm" kind="presentation" id="riH-x0-Fl2"/>
+                                    <segue destination="Vrd-en-zQm" kind="presentation" modalPresentationStyle="fullScreen" id="riH-x0-Fl2"/>
                                 </connections>
                             </button>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="auth_screen_logo" translatesAutoresizingMaskIntoConstraints="NO" id="WDA-9R-9nD">
@@ -282,11 +282,11 @@
             <objects>
                 <viewController id="Vrd-en-zQm" userLabel="Web View View Controller" customClass="WebViewViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4jv-ww-F2p">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="oqb-Dz-djf">
-                                <rect key="frame" x="0.0" y="-10" width="393" height="852"/>
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <wkWebViewConfiguration key="configuration">
                                     <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
@@ -303,7 +303,7 @@
                                 <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                 <state key="normal" image="nav_back_button"/>
                                 <connections>
-                                    <action selector="didTapBackButton:" destination="Vrd-en-zQm" eventType="touchUpInside" id="O8t-Ak-anc"/>
+                                    <action selector="didTapBackButton:" destination="Vrd-en-zQm" eventType="touchUpInside" id="PLK-zm-tGj"/>
                                 </connections>
                             </button>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="j1W-OJ-PgU">
@@ -322,7 +322,7 @@
                             <constraint firstItem="j1W-OJ-PgU" firstAttribute="leading" secondItem="4jv-ww-F2p" secondAttribute="leading" id="dga-HY-QTJ"/>
                             <constraint firstItem="GHQ-1A-k0Y" firstAttribute="top" secondItem="YuY-BQ-LOl" secondAttribute="top" id="i8S-L9-a3R"/>
                             <constraint firstAttribute="trailing" secondItem="j1W-OJ-PgU" secondAttribute="trailing" id="qHs-EI-ufH"/>
-                            <constraint firstItem="oqb-Dz-djf" firstAttribute="top" secondItem="4jv-ww-F2p" secondAttribute="topMargin" constant="-10" id="sb6-Zx-PTa"/>
+                            <constraint firstItem="oqb-Dz-djf" firstAttribute="top" secondItem="4jv-ww-F2p" secondAttribute="topMargin" id="sb6-Zx-PTa"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="grb-HI-eda"/>
@@ -338,7 +338,7 @@
         <!--Unsplash-->
         <scene sceneID="MD7-ZP-6Ej">
             <objects>
-                <viewController storyboardIdentifier="SplashViewController" id="SiS-OV-jk6" customClass="SplashViewController" customModule="Image_Feed" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="SplashViewController" id="SiS-OV-jk6" customClass="SplashViewController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ZrC-oP-OG1">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -348,7 +348,7 @@
                             </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="8vf-J6-jQs"/>
-                        <color key="backgroundColor" red="0.1019607843" green="0.1058823529" blue="0.1333333333" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" name="fon"/>
                         <constraints>
                             <constraint firstItem="lAV-hN-FPv" firstAttribute="centerY" secondItem="ZrC-oP-OG1" secondAttribute="centerY" id="N9a-dN-si1"/>
                             <constraint firstItem="lAV-hN-FPv" firstAttribute="centerX" secondItem="ZrC-oP-OG1" secondAttribute="centerX" id="bWq-5x-Pc8"/>

@@ -44,6 +44,8 @@ final class WebViewViewController: UIViewController {
     
     @IBAction private func didTapBackButton(_ sender: Any?) {
         delegate?.webViewViewControllerDidCancel(self)
+        print ("ITS LIT pushed the button")
+        dismiss(animated: true)
     }
     
     override func viewDidAppear(_ animated: Bool) {
