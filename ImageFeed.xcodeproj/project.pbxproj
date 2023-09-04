@@ -66,8 +66,11 @@
 		1500A6342A7967BB00E37793 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
-				1500A6322A79679F00E37793 /* ProfileViewController.swift */,
 				1500A63B2A7979DF00E37793 /* ImagesList */,
+				15CE26662A9FC51E00641DE3 /* OAuth2 */,
+				15CE266B2A9FC77B00641DE3 /* SplashViewController */,
+				15DA3B012A818A71001F49CD /* SingleImageViewController */,
+				1500A6322A79679F00E37793 /* ProfileViewController.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -75,9 +78,11 @@
 		1500A63B2A7979DF00E37793 /* ImagesList */ = {
 			isa = PBXGroup;
 			children = (
+				157B30A52A96108C002A7DDA /* AuthViewController.swift */,
+				157B30A72A9614A2002A7DDA /* WebViewViewController.swift */,
+				15CE266E2A9FC82800641DE3 /* AuthViewControllerDelegate.swift */,
 				1522F1662A75919100B71A17 /* ImagesListViewController.swift */,
 				1522F1682A7591A100B71A17 /* ImagesListCell.swift */,
-				15DA3B012A818A71001F49CD /* SingleImageViewController */,
 			);
 			path = ImagesList;
 			sourceTree = "<group>";
@@ -117,9 +122,6 @@
 		157B30A42A961063002A7DDA /* Auth */ = {
 			isa = PBXGroup;
 			children = (
-				157B30A52A96108C002A7DDA /* AuthViewController.swift */,
-				157B30A72A9614A2002A7DDA /* WebViewViewController.swift */,
-				15CE266E2A9FC82800641DE3 /* AuthViewControllerDelegate.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -164,8 +166,6 @@
 			isa = PBXGroup;
 			children = (
 				1553A9462A7FF06100B7EF1B /* SingleImageViewController.swift */,
-				15CE266B2A9FC77B00641DE3 /* SplashViewController */,
-				15CE26662A9FC51E00641DE3 /* OAuth2 */,
 			);
 			path = SingleImageViewController;
 			sourceTree = "<group>";

@@ -20,7 +20,7 @@ final class OAuth2Service {
         }
     }
     
-    func fetchAuthToken(
+    func fetchOAuthToken(
             _ code: String,
             complition: @escaping (Result<String,Error>) -> Void
         ) {
@@ -113,5 +113,4 @@ private extension OAuth2Service {
             baseURL: URL(string: "https://unsplash.com")!
         )
     }
-    
 }
