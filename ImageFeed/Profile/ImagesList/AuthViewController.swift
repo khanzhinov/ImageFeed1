@@ -22,6 +22,10 @@ final class AuthViewController: UIViewController {
             super.prepare(for: segue, sender: sender)
         }
     }
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 }
 
 extension AuthViewController: WebViewViewControllerDelegate {

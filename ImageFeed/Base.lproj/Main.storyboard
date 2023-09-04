@@ -261,10 +261,10 @@
             </objects>
             <point key="canvasLocation" x="-1379" y="-1468"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Root Navigation Controller-->
         <scene sceneID="uwa-Qa-WuR">
             <objects>
-                <navigationController id="ocN-6S-bmn" sceneMemberID="viewController">
+                <navigationController id="ocN-6S-bmn" customClass="RootNavigationController" customModule="ImageFeed" customModuleProvider="target" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="fqY-Hz-gPq">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>

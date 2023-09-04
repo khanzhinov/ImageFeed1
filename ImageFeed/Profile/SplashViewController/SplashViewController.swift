@@ -15,7 +15,7 @@ final class SplashViewController: UIViewController {
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        oauth2TokenStorage.token = nil
+        //oauth2TokenStorage.token = nil
         if oauth2TokenStorage.token != nil {
             switchToTabBarController()
         } else {
