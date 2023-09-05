@@ -21,6 +21,7 @@
 		157B30A62A96108C002A7DDA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A52A96108C002A7DDA /* AuthViewController.swift */; };
 		157B30A82A9614A2002A7DDA /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A72A9614A2002A7DDA /* WebViewViewController.swift */; };
 		15BEE49D2AA75CBE00C77520 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 15BEE49C2AA75CBE00C77520 /* ProgressHUD */; };
+		15BEE49F2AA7AC2900C77520 /* UIBlockingProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEE49E2AA7AC2900C77520 /* UIBlockingProgressHUD.swift */; };
 		15CE26682A9FC55900641DE3 /* OAuth2Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CE26672A9FC55900641DE3 /* OAuth2Service.swift */; };
 		15CE266A2A9FC5B300641DE3 /* OAuth2TokenStorage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CE26692A9FC5B300641DE3 /* OAuth2TokenStorage.swift */; };
 		15CE266D2A9FC79800641DE3 /* SplashViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15CE266C2A9FC79800641DE3 /* SplashViewController.swift */; };
@@ -46,6 +47,7 @@
 		157B30A22A8FA741002A7DDA /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		157B30A52A96108C002A7DDA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		157B30A72A9614A2002A7DDA /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		15BEE49E2AA7AC2900C77520 /* UIBlockingProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBlockingProgressHUD.swift; sourceTree = "<group>"; };
 		15CE26672A9FC55900641DE3 /* OAuth2Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2Service.swift; sourceTree = "<group>"; };
 		15CE26692A9FC5B300641DE3 /* OAuth2TokenStorage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2TokenStorage.swift; sourceTree = "<group>"; };
 		15CE266C2A9FC79800641DE3 /* SplashViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplashViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				15CE266B2A9FC77B00641DE3 /* SplashViewController */,
 				15DA3B012A818A71001F49CD /* SingleImageViewController */,
 				1500A6322A79679F00E37793 /* ProfileViewController.swift */,
+				15CE26742A9FC96200641DE3 /* AnyHelps */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -136,7 +139,6 @@
 			children = (
 				15CE26672A9FC55900641DE3 /* OAuth2Service.swift */,
 				15CE26692A9FC5B300641DE3 /* OAuth2TokenStorage.swift */,
-				15CE26712A9FC8BB00641DE3 /* Model */,
 			);
 			path = OAuth2;
 			sourceTree = "<group>";
@@ -149,20 +151,13 @@
 			path = SplashViewController;
 			sourceTree = "<group>";
 		};
-		15CE26712A9FC8BB00641DE3 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				15CE26722A9FC8CF00641DE3 /* OAuthTokenResponseBody.swift */,
-				15CE26742A9FC96200641DE3 /* AnyHelps */,
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
 		15CE26742A9FC96200641DE3 /* AnyHelps */ = {
 			isa = PBXGroup;
 			children = (
 				15CE26752A9FC97A00641DE3 /* URLRequestExtension.swift */,
 				15CE26772A9FC99700641DE3 /* URLSessionExtension.swift */,
+				15BEE49E2AA7AC2900C77520 /* UIBlockingProgressHUD.swift */,
+				15CE26722A9FC8CF00641DE3 /* OAuthTokenResponseBody.swift */,
 			);
 			path = AnyHelps;
 			sourceTree = "<group>";
@@ -269,6 +264,7 @@
 				15CE26682A9FC55900641DE3 /* OAuth2Service.swift in Sources */,
 				157B30A82A9614A2002A7DDA /* WebViewViewController.swift in Sources */,
 				1522F1552A7590BD00B71A17 /* SceneDelegate.swift in Sources */,
+				15BEE49F2AA7AC2900C77520 /* UIBlockingProgressHUD.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
