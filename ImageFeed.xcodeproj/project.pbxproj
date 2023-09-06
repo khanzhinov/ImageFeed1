@@ -38,6 +38,7 @@
 		15FBAB7F2AA8865C00E62B16 /* AlertPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB7E2AA8865C00E62B16 /* AlertPresenterProtocol.swift */; };
 		15FBAB812AA8866A00E62B16 /* AlertPresentableDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */; };
 		15FBAB842AA8870A00E62B16 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB832AA8870A00E62B16 /* TabBarController.swift */; };
+		15FBAB862AA888D000E62B16 /* OAuth2TokenResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB852AA888D000E62B16 /* OAuth2TokenResponseBody.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -71,6 +72,7 @@
 		15FBAB7E2AA8865C00E62B16 /* AlertPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenterProtocol.swift; sourceTree = "<group>"; };
 		15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentableDelagate.swift; sourceTree = "<group>"; };
 		15FBAB832AA8870A00E62B16 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		15FBAB852AA888D000E62B16 /* OAuth2TokenResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2TokenResponseBody.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -168,6 +170,7 @@
 			children = (
 				15CE26672A9FC55900641DE3 /* OAuth2Service.swift */,
 				15CE26692A9FC5B300641DE3 /* OAuth2TokenStorage.swift */,
+				15FBAB852AA888D000E62B16 /* OAuth2TokenResponseBody.swift */,
 			);
 			path = OAuth2;
 			sourceTree = "<group>";
@@ -315,6 +318,7 @@
 				15CE26732A9FC8CF00641DE3 /* OAuthTokenResponseBody.swift in Sources */,
 				15FBAB812AA8866A00E62B16 /* AlertPresentableDelagate.swift in Sources */,
 				1522F1532A7590BD00B71A17 /* AppDelegate.swift in Sources */,
+				15FBAB862AA888D000E62B16 /* OAuth2TokenResponseBody.swift in Sources */,
 				155ECF832AA64CD800DA569C /* RootNavigationController.swift in Sources */,
 				1553A9472A7FF06100B7EF1B /* SingleImageViewController.swift in Sources */,
 				15CE266F2A9FC82800641DE3 /* AuthViewControllerDelegate.swift in Sources */,
