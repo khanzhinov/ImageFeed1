@@ -33,6 +33,10 @@
 		15FBAB6C2AA85C1000E62B16 /* ProfileImageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB6B2AA85C1000E62B16 /* ProfileImageService.swift */; };
 		15FBAB6E2AA85CF300E62B16 /* UserResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB6D2AA85CF300E62B16 /* UserResult.swift */; };
 		15FBAB722AA876D200E62B16 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 15FBAB712AA876D200E62B16 /* Kingfisher */; };
+		15FBAB752AA8842500E62B16 /* SwiftKeychainWrapper in Frameworks */ = {isa = PBXBuildFile; productRef = 15FBAB742AA8842500E62B16 /* SwiftKeychainWrapper */; };
+		15FBAB7D2AA8864900E62B16 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB7C2AA8864900E62B16 /* AlertPresenter.swift */; };
+		15FBAB7F2AA8865C00E62B16 /* AlertPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB7E2AA8865C00E62B16 /* AlertPresenterProtocol.swift */; };
+		15FBAB812AA8866A00E62B16 /* AlertPresentableDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +66,9 @@
 		15CE26772A9FC99700641DE3 /* URLSessionExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionExtension.swift; sourceTree = "<group>"; };
 		15FBAB6B2AA85C1000E62B16 /* ProfileImageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileImageService.swift; sourceTree = "<group>"; };
 		15FBAB6D2AA85CF300E62B16 /* UserResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserResult.swift; sourceTree = "<group>"; };
+		15FBAB7C2AA8864900E62B16 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
+		15FBAB7E2AA8865C00E62B16 /* AlertPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenterProtocol.swift; sourceTree = "<group>"; };
+		15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentableDelagate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,6 +78,7 @@
 			files = (
 				15FBAB722AA876D200E62B16 /* Kingfisher in Frameworks */,
 				15BEE49D2AA75CBE00C77520 /* ProgressHUD in Frameworks */,
+				15FBAB752AA8842500E62B16 /* SwiftKeychainWrapper in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +88,7 @@
 		1500A6342A7967BB00E37793 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				15FBAB7B2AA885E200E62B16 /* Aalert */,
 				1500A63B2A7979DF00E37793 /* ImagesList */,
 				15CE26662A9FC51E00641DE3 /* OAuth2 */,
 				15CE266B2A9FC77B00641DE3 /* SplashViewController */,
@@ -189,6 +198,16 @@
 			path = SingleImageViewController;
 			sourceTree = "<group>";
 		};
+		15FBAB7B2AA885E200E62B16 /* Aalert */ = {
+			isa = PBXGroup;
+			children = (
+				15FBAB7C2AA8864900E62B16 /* AlertPresenter.swift */,
+				15FBAB7E2AA8865C00E62B16 /* AlertPresenterProtocol.swift */,
+				15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */,
+			);
+			path = Aalert;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -208,6 +227,7 @@
 			packageProductDependencies = (
 				15BEE49C2AA75CBE00C77520 /* ProgressHUD */,
 				15FBAB712AA876D200E62B16 /* Kingfisher */,
+				15FBAB742AA8842500E62B16 /* SwiftKeychainWrapper */,
 			);
 			productName = ImageFeed;
 			productReference = 1522F14F2A7590BD00B71A17 /* ImageFeed.app */;
@@ -240,6 +260,7 @@
 			packageReferences = (
 				15BEE49B2AA75CBE00C77520 /* XCRemoteSwiftPackageReference "ProgressHUD" */,
 				15FBAB702AA876D200E62B16 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				15FBAB732AA8842500E62B16 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */,
 			);
 			productRefGroup = 1522F1502A7590BD00B71A17 /* Products */;
 			projectDirPath = "";
@@ -269,8 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				1522F1672A75919100B71A17 /* ImagesListViewController.swift in Sources */,
+				15FBAB7D2AA8864900E62B16 /* AlertPresenter.swift in Sources */,
 				157B30A32A8FA741002A7DDA /* Constans.swift in Sources */,
 				1522F1692A7591A100B71A17 /* ImagesListCell.swift in Sources */,
+				15FBAB7F2AA8865C00E62B16 /* AlertPresenterProtocol.swift in Sources */,
 				15CE266D2A9FC79800641DE3 /* SplashViewController.swift in Sources */,
 				1500A6332A79679F00E37793 /* ProfileViewController.swift in Sources */,
 				15FBAB6E2AA85CF300E62B16 /* UserResult.swift in Sources */,
@@ -279,6 +302,7 @@
 				157B30A62A96108C002A7DDA /* AuthViewController.swift in Sources */,
 				15CE26782A9FC99700641DE3 /* URLSessionExtension.swift in Sources */,
 				15CE26732A9FC8CF00641DE3 /* OAuthTokenResponseBody.swift in Sources */,
+				15FBAB812AA8866A00E62B16 /* AlertPresentableDelagate.swift in Sources */,
 				1522F1532A7590BD00B71A17 /* AppDelegate.swift in Sources */,
 				155ECF832AA64CD800DA569C /* RootNavigationController.swift in Sources */,
 				1553A9472A7FF06100B7EF1B /* SingleImageViewController.swift in Sources */,
@@ -530,6 +554,14 @@
 				minimumVersion = 7.0.0;
 			};
 		};
+		15FBAB732AA8842500E62B16 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/jrendel/SwiftKeychainWrapper";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -542,6 +574,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 15FBAB702AA876D200E62B16 /* XCRemoteSwiftPackageReference "Kingfisher" */;
 			productName = Kingfisher;
+		};
+		15FBAB742AA8842500E62B16 /* SwiftKeychainWrapper */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 15FBAB732AA8842500E62B16 /* XCRemoteSwiftPackageReference "SwiftKeychainWrapper" */;
+			productName = SwiftKeychainWrapper;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

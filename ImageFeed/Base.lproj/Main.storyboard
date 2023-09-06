@@ -112,10 +112,6 @@
                             <color key="backgroundColor" name="fon"/>
                         </tabBarAppearance>
                     </tabBar>
-                    <connections>
-                        <segue destination="Oz7-XB-msH" kind="relationship" relationship="viewControllers" id="7t0-UA-F6V"/>
-                        <segue destination="ML4-d4-NeS" kind="relationship" relationship="viewControllers" id="8s7-4a-3sr"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uNg-FI-NHU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
