@@ -76,20 +76,22 @@ final class SplashViewController: UIViewController {
 }
 
 //MARK: - AuthViewControllerDelegate
-//extension SplashViewController: AuthViewControllerDelegate {
-//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-//        if segue.identifier == ShowAuthSegueIdentifier {
-//
-//            guard let navigationController = segue.destination as? UINavigationController,
-//                  let viewController = navigationController.viewControllers[0] as? AuthViewController else {
-//                fatalError("Failed to prepare for \(ShowAuthSegueIdentifier)")
-//            }
-//            viewController.delegate = self
-//        } else {
-//            super.prepare(for: segue, sender: sender)
-//        }
-//    }
-//}
+/*
+ extension SplashViewController: AuthViewControllerDelegate {
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == ShowAuthSegueIdentifier {
+
+           guard let navigationController = segue.destination as? UINavigationController,
+                  let viewController = navigationController.viewControllers[0] as? AuthViewController else {
+                fatalError("Failed to prepare for \(ShowAuthSegueIdentifier)")
+            }
+            viewController.delegate = self
+       } else {
+            super.prepare(for: segue, sender: sender)
+        }
+    }
+}
+ */
 extension SplashViewController: AuthViewControllerDelegate {
     private func switchToAuthViewController() {
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
