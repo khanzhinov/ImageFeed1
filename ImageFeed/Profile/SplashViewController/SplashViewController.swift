@@ -11,7 +11,7 @@ import ProgressHUD
 final class SplashViewController: UIViewController {
     private let ShowAuthenticationScreenSegueIdentifier = "ShowAuthenticationScreen"
 
-    private let oauth2Service = OAuth2Service()
+    private let oauth2Service = OAuth2Service.shared
     private let oauth2TokenStorage = OAuth2TokenStorage()
 
     override func viewDidAppear(_ animated: Bool) {
@@ -65,17 +65,20 @@ extension SplashViewController: AuthViewControllerDelegate {
         }
     }
 
-    private func fetchOAuthToken(_ code: String) {
-        oauth2Service.fetchOAuthToken(code) { [weak self] result in
-            guard let self = self else { return }
-            switch result {
-            case .success:
-                self.switchToTabBarController()
-                ProgressHUD.dismiss()
-            case .failure:
-                // TODO [Sprint 11]
-                ProgressHUD.dismiss()
-            }
-        }
-    }
+    private func fetchOAuthToken(_ code: String){
+         oauth2Service.fetchAuthToken(code) { [weak self] result in
+             guard let self = self else { return }
+
+             switch result {
+             case .success:
+                 self.switchToTabBarController()
+                 UIBlockingProgressHUD.dismiss()
+             case .failure:
+                 UIBlockingProgressHUD.dismiss()
+                 print("!failure NO TOKEN")
+                 //showErrorAlert(message: "Не удалось войти в систему")
+                 break
+             }
+         }
+     }
 }

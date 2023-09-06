@@ -7,40 +7,50 @@
 
 import UIKit
 
-final class OAuth2Service {
+ final class OAuth2Service {
+     //MARK: - Variables
+     static let shared = OAuth2Service()
+     private let urlSession = URLSession.shared
+     private (set) var authToken: String? {
+         get {
+             let tokenStorage = OAuth2TokenStorage()
+             return tokenStorage.token
+         }
+         set {
+             let tokenStorage = OAuth2TokenStorage()
+             tokenStorage.token = newValue
+         }
+     }
 
-    static let shared = OAuth2Service()
-    private let urlSession = URLSession.shared
-    private (set) var authToken: String? {
-        get {
-            return OAuth2TokenStorage().token
-        }
-        set {
-            OAuth2TokenStorage().token = newValue
-        }
-    }
-    
-    func fetchOAuthToken(
-            _ code: String,
-            complition: @escaping (Result<String,Error>) -> Void
-        ) {
-            let request = authTokenRequest(code: code)
-            let task = object(for: request) { [weak self] result in
-                guard let self = self else { return }
-                DispatchQueue.main.async {
-                switch result {
-                case .success(let body):
-                    let authToken = body.accessToken
-                    self.authToken = authToken
-                    complition(.success(authToken))
-                case .failure(let error):
-                    complition(.failure(error))
-                }
-            }
-            }
-            task.resume()
-        }
-    }
+     //MARK: - Initialization
+     private init() { }
+
+     //MARK: - Main function
+     func fetchAuthToken(
+         _ code: String,
+         complition: @escaping (Result<String,Error>) -> Void
+     ) {
+         guard let request = authTokenRequest(code: code) else {
+             return
+         }
+         let task = object(for: request) { [weak self] result in
+             guard let self = self else { return }
+
+             switch result {
+                 case .success(let body):
+                     let authToken = body.accessToken
+                     self.authToken = authToken
+                     complition(.success(authToken))
+                 case .failure(let error):
+                     complition(.failure(error))
+             }
+         }
+         task.resume()
+     }
+ }
+
+
+ 
 
 //MARK: - Private functions
 private extension OAuth2Service {
@@ -101,7 +111,7 @@ private extension OAuth2Service {
     }
     
     /// функция для получения авторизационного токена
-    func authTokenRequest(code: String) -> URLRequest {
+    func authTokenRequest(code: String) -> URLRequest? {
         URLRequest.makeHTTPRequest(
             path: "/oauth/token"
             + "?client_id=\(AccessKey)"
