@@ -39,6 +39,7 @@
 		15FBAB812AA8866A00E62B16 /* AlertPresentableDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */; };
 		15FBAB842AA8870A00E62B16 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB832AA8870A00E62B16 /* TabBarController.swift */; };
 		15FBAB862AA888D000E62B16 /* OAuth2TokenResponseBody.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB852AA888D000E62B16 /* OAuth2TokenResponseBody.swift */; };
+		15FBAB882AA88A0C00E62B16 /* WebViewViewControllerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB872AA88A0C00E62B16 /* WebViewViewControllerDelegate.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +74,7 @@
 		15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentableDelagate.swift; sourceTree = "<group>"; };
 		15FBAB832AA8870A00E62B16 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 		15FBAB852AA888D000E62B16 /* OAuth2TokenResponseBody.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OAuth2TokenResponseBody.swift; sourceTree = "<group>"; };
+		15FBAB872AA88A0C00E62B16 /* WebViewViewControllerDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewControllerDelegate.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +113,7 @@
 				1522F1662A75919100B71A17 /* ImagesListViewController.swift */,
 				1522F1682A7591A100B71A17 /* ImagesListCell.swift */,
 				155ECF822AA64CD800DA569C /* RootNavigationController.swift */,
+				15FBAB872AA88A0C00E62B16 /* WebViewViewControllerDelegate.swift */,
 			);
 			path = ImagesList;
 			sourceTree = "<group>";
@@ -324,6 +327,7 @@
 				15CE266F2A9FC82800641DE3 /* AuthViewControllerDelegate.swift in Sources */,
 				15FBAB842AA8870A00E62B16 /* TabBarController.swift in Sources */,
 				15BEE4A22AA7ADC700C77520 /* ProfileService.swift in Sources */,
+				15FBAB882AA88A0C00E62B16 /* WebViewViewControllerDelegate.swift in Sources */,
 				15CE26682A9FC55900641DE3 /* OAuth2Service.swift in Sources */,
 				157B30A82A9614A2002A7DDA /* WebViewViewController.swift in Sources */,
 				15FBAB6C2AA85C1000E62B16 /* ProfileImageService.swift in Sources */,
