@@ -95,7 +95,6 @@
 				15CE26662A9FC51E00641DE3 /* OAuth2 */,
 				15CE266B2A9FC77B00641DE3 /* SplashViewController */,
 				15DA3B012A818A71001F49CD /* SingleImageViewController */,
-				1500A6322A79679F00E37793 /* ProfileViewController.swift */,
 				15CE26742A9FC96200641DE3 /* AnyHelps */,
 			);
 			path = Profile;
@@ -156,6 +155,7 @@
 		15BEE4A02AA7ADB500C77520 /* Profile */ = {
 			isa = PBXGroup;
 			children = (
+				1500A6322A79679F00E37793 /* ProfileViewController.swift */,
 				15BEE4A12AA7ADC700C77520 /* ProfileService.swift */,
 				15FBAB6B2AA85C1000E62B16 /* ProfileImageService.swift */,
 				15FBAB822AA886EC00E62B16 /* TabBarController */,
