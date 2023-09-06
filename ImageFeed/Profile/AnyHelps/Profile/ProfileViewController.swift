@@ -59,7 +59,7 @@ final class ProfileViewController: UIViewController {
     lazy var logoutButton: UIButton = {
         
         let button = UIButton.systemButton(
-            with: UIImage(named: "logout_button") ?? UIImage(),
+            with: UIImage(named: "logout") ?? UIImage(),
             target: self,
             action: #selector(Self.didTapLogoutButton)
         )
@@ -158,6 +158,7 @@ final class ProfileViewController: UIViewController {
     private func didTapLogoutButton() {}
     
 }
+
 
 private extension ProfileViewController {
     func updateAvatar() {
