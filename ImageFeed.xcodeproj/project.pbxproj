@@ -37,6 +37,7 @@
 		15FBAB7D2AA8864900E62B16 /* AlertPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB7C2AA8864900E62B16 /* AlertPresenter.swift */; };
 		15FBAB7F2AA8865C00E62B16 /* AlertPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB7E2AA8865C00E62B16 /* AlertPresenterProtocol.swift */; };
 		15FBAB812AA8866A00E62B16 /* AlertPresentableDelagate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */; };
+		15FBAB842AA8870A00E62B16 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15FBAB832AA8870A00E62B16 /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -69,6 +70,7 @@
 		15FBAB7C2AA8864900E62B16 /* AlertPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenter.swift; sourceTree = "<group>"; };
 		15FBAB7E2AA8865C00E62B16 /* AlertPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresenterProtocol.swift; sourceTree = "<group>"; };
 		15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertPresentableDelagate.swift; sourceTree = "<group>"; };
+		15FBAB832AA8870A00E62B16 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -156,6 +158,7 @@
 			children = (
 				15BEE4A12AA7ADC700C77520 /* ProfileService.swift */,
 				15FBAB6B2AA85C1000E62B16 /* ProfileImageService.swift */,
+				15FBAB822AA886EC00E62B16 /* TabBarController */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -206,6 +209,14 @@
 				15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */,
 			);
 			path = Aalert;
+			sourceTree = "<group>";
+		};
+		15FBAB822AA886EC00E62B16 /* TabBarController */ = {
+			isa = PBXGroup;
+			children = (
+				15FBAB832AA8870A00E62B16 /* TabBarController.swift */,
+			);
+			path = TabBarController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -307,6 +318,7 @@
 				155ECF832AA64CD800DA569C /* RootNavigationController.swift in Sources */,
 				1553A9472A7FF06100B7EF1B /* SingleImageViewController.swift in Sources */,
 				15CE266F2A9FC82800641DE3 /* AuthViewControllerDelegate.swift in Sources */,
+				15FBAB842AA8870A00E62B16 /* TabBarController.swift in Sources */,
 				15BEE4A22AA7ADC700C77520 /* ProfileService.swift in Sources */,
 				15CE26682A9FC55900641DE3 /* OAuth2Service.swift in Sources */,
 				157B30A82A9614A2002A7DDA /* WebViewViewController.swift in Sources */,
