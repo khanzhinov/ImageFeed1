@@ -23,9 +23,6 @@ class OAuth2TokenStorage {
                 return
             }
             let isSuccess = KeychainWrapper.standard.set(newValue, forKey: Keys.token.rawValue)
-            guard isSuccess else {
-                return
-            }
         }
     }
 }

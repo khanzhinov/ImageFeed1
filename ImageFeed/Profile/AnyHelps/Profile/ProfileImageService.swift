@@ -17,7 +17,7 @@ final class ProfileImageService {
         static let paramNameURL = "URL"
     }
     static let shared = ProfileImageService()
-    static let DidChangeNotification = Notification.Name(rawValue: Keys.notificationName)
+    static let didChangeNotification = Notification.Name(rawValue: Keys.notificationName)
     private let urlSession = URLSession.shared
     private var task: URLSessionTask?
     private (set) var avatarURL: String?
@@ -54,7 +54,7 @@ final class ProfileImageService {
                         completion(.success(avatarURL))
                         NotificationCenter.default
                             .post(
-                                name: ProfileImageService.DidChangeNotification,
+                                name: ProfileImageService.didChangeNotification,
                                 object: self,
                                 userInfo: [Keys.paramNameURL: avatarURL])
                         

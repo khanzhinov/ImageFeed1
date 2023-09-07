@@ -208,7 +208,6 @@
 				15CE26772A9FC99700641DE3 /* URLSessionExtension.swift */,
 				15BEE49E2AA7AC2900C77520 /* UIBlockingProgressHUD.swift */,
 				15FBAB6D2AA85CF300E62B16 /* UserResult.swift */,
-				15FBAB892AA88A7700E62B16 /* AlertModel.swift */,
 				15FBAB8B2AA88AC900E62B16 /* UIColor.swift */,
 				15FBAB8D2AA88AEE00E62B16 /* UIAplicationExtensions.swift */,
 				15BEE4A02AA7ADB500C77520 /* Profile */,
@@ -230,6 +229,7 @@
 				15FBAB7C2AA8864900E62B16 /* AlertPresenter.swift */,
 				15FBAB7E2AA8865C00E62B16 /* AlertPresenterProtocol.swift */,
 				15FBAB802AA8866A00E62B16 /* AlertPresentableDelagate.swift */,
+				15FBAB892AA88A7700E62B16 /* AlertModel.swift */,
 			);
 			path = Aalert;
 			sourceTree = "<group>";
