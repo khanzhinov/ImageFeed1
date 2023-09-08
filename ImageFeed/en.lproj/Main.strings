@@ -1,0 +1,12 @@
+
+/* Class = "UILabel"; text = "27 августа 2022"; ObjectID = "5zp-VJ-YUq"; */
+"5zp-VJ-YUq.text" = "27 августа 2022";
+
+/* Class = "UIButton"; configuration.title = "Войти"; ObjectID = "B38-3d-zKB"; */
+"B38-3d-zKB.configuration.title" = "Войти";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "B38-3d-zKB"; */
+"B38-3d-zKB.normalTitle" = "Button";
+
+/* Class = "UIViewController"; title = "ImageList"; ObjectID = "Oz7-XB-msH"; */
+"Oz7-XB-msH.title" = "ImageList";
