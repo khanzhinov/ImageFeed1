@@ -22,7 +22,7 @@ class OAuth2TokenStorage {
                 KeychainWrapper.standard.removeObject(forKey: Keys.token.rawValue)
                 return
             }
-            let isSuccess = KeychainWrapper.standard.set(newValue, forKey: Keys.token.rawValue)
+            _ = KeychainWrapper.standard.set(newValue, forKey: Keys.token.rawValue)
         }
     }
 }

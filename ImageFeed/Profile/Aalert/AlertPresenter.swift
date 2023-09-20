@@ -5,13 +5,14 @@
 //  Created by Валерия Медведева on 06.09.2023.
 //
 
+import Foundation
 import UIKit
 
 final class AlertPresenter {
-    private weak var delegate: AlertPresentableDelagate?
+    private weak var delagate: AlertPresentableDelagate?
     
     init(delagate: AlertPresentableDelagate?) {
-        self.delegate = delagate
+        self.delagate = delagate
     }
 }
 
@@ -26,6 +27,14 @@ extension AlertPresenter: AlertPresenterProtocol {
         }
         
         alert.addAction(action)
-        delegate?.present(alert: alert, animated: true)
+        
+        if let secondButtonText = alertArgs.secondButtonText {
+                     let secondAction = UIAlertAction(title: secondButtonText, style: .default) { _ in
+                         alertArgs.secondCompletion()
+                     }
+                     alert.addAction(secondAction)
+                 }
+        
+        delagate?.present(alert: alert, animated: true)
     }
 }
