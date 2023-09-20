@@ -26,8 +26,8 @@ final class ImagesListCell: UITableViewCell {
     private struct Keys {
         static let reuseIdentifierName = "ImagesListCell"
         static let placeholderImageName = "image_cell_placeholder"
-        static let likedImageName = "like_button_on"
-        static let unlikedImageName = "like_button_off"
+        static let likedImageName = "like on"
+        static let unlikedImageName = "like off"
     }
     
     //MARK: - Variables

@@ -117,7 +117,6 @@ final class ImagesListService {
                     self.task = nil
                 case .failure(let error):
                     completion(.failure(error))
-//                    print("!ОШИБКА в запросе лайка \(error)")
                 }
             }
         }
