@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1500A6332A79679F00E37793 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1500A6322A79679F00E37793 /* ProfileViewController.swift */; };
+		1519FA5F2AC20226002E90CF /* WebViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519FA5E2AC20226002E90CF /* WebViewProtocol.swift */; };
 		1522F1532A7590BD00B71A17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F1522A7590BD00B71A17 /* AppDelegate.swift */; };
 		1522F1552A7590BD00B71A17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F1542A7590BD00B71A17 /* SceneDelegate.swift */; };
 		1522F15A2A7590BD00B71A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1522F1582A7590BD00B71A17 /* Main.storyboard */; };
@@ -23,7 +24,7 @@
 		156649142AB38BD300D85000 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156649132AB38BD300D85000 /* DateService.swift */; };
 		157B30A32A8FA741002A7DDA /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A22A8FA741002A7DDA /* Constans.swift */; };
 		157B30A62A96108C002A7DDA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A52A96108C002A7DDA /* AuthViewController.swift */; };
-		157B30A82A9614A2002A7DDA /* WebViewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A72A9614A2002A7DDA /* WebViewViewController.swift */; };
+		157B30A82A9614A2002A7DDA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A72A9614A2002A7DDA /* WebViewController.swift */; };
 		157DCBEE2ABB61F500B034D0 /* TranslucentGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157DCBED2ABB61F500B034D0 /* TranslucentGradient.swift */; };
 		15BEE49D2AA75CBE00C77520 /* ProgressHUD in Frameworks */ = {isa = PBXBuildFile; productRef = 15BEE49C2AA75CBE00C77520 /* ProgressHUD */; };
 		15BEE49F2AA7AC2900C77520 /* UIBlockingProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15BEE49E2AA7AC2900C77520 /* UIBlockingProgressHUD.swift */; };
@@ -51,6 +52,7 @@
 
 /* Begin PBXFileReference section */
 		1500A6322A79679F00E37793 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		1519FA5E2AC20226002E90CF /* WebViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewProtocol.swift; sourceTree = "<group>"; };
 		1522F14F2A7590BD00B71A17 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1522F1522A7590BD00B71A17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1522F1542A7590BD00B71A17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +70,7 @@
 		156649132AB38BD300D85000 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
 		157B30A22A8FA741002A7DDA /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
 		157B30A52A96108C002A7DDA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
-		157B30A72A9614A2002A7DDA /* WebViewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewViewController.swift; sourceTree = "<group>"; };
+		157B30A72A9614A2002A7DDA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		157DCBED2ABB61F500B034D0 /* TranslucentGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslucentGradient.swift; sourceTree = "<group>"; };
 		15BEE49E2AA7AC2900C77520 /* UIBlockingProgressHUD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBlockingProgressHUD.swift; sourceTree = "<group>"; };
 		15BEE4A12AA7ADC700C77520 /* ProfileService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileService.swift; sourceTree = "<group>"; };
@@ -153,7 +155,7 @@
 				157B30A42A961063002A7DDA /* Auth */,
 				155ECF822AA64CD800DA569C /* RootNavigationController.swift */,
 				157B30A52A96108C002A7DDA /* AuthViewController.swift */,
-				157B30A72A9614A2002A7DDA /* WebViewViewController.swift */,
+				157B30A72A9614A2002A7DDA /* WebViewController.swift */,
 				15CE266E2A9FC82800641DE3 /* AuthViewControllerDelegate.swift */,
 				15FBAB872AA88A0C00E62B16 /* WebViewViewControllerDelegate.swift */,
 				15B811762AA8986C000F662C /* API */,
@@ -178,6 +180,7 @@
 		157B30A42A961063002A7DDA /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				1519FA5E2AC20226002E90CF /* WebViewProtocol.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -357,6 +360,7 @@
 				1522F1692A7591A100B71A17 /* ImagesListCell.swift in Sources */,
 				15FBAB8C2AA88AC900E62B16 /* UIColor.swift in Sources */,
 				15FBAB8A2AA88A7700E62B16 /* AlertModel.swift in Sources */,
+				1519FA5F2AC20226002E90CF /* WebViewProtocol.swift in Sources */,
 				15FBAB7F2AA8865C00E62B16 /* AlertPresenterProtocol.swift in Sources */,
 				156649122AB38A1300D85000 /* ImagesListService.swift in Sources */,
 				15CE266D2A9FC79800641DE3 /* SplashViewController.swift in Sources */,
@@ -381,7 +385,7 @@
 				15FBAB8E2AA88AEE00E62B16 /* UIAplicationExtensions.swift in Sources */,
 				15FBAB882AA88A0C00E62B16 /* WebViewViewControllerDelegate.swift in Sources */,
 				15CE26682A9FC55900641DE3 /* OAuth2Service.swift in Sources */,
-				157B30A82A9614A2002A7DDA /* WebViewViewController.swift in Sources */,
+				157B30A82A9614A2002A7DDA /* WebViewController.swift in Sources */,
 				15FBAB6C2AA85C1000E62B16 /* ProfileImageService.swift in Sources */,
 				1522F1552A7590BD00B71A17 /* SceneDelegate.swift in Sources */,
 				15BEE49F2AA7AC2900C77520 /* UIBlockingProgressHUD.swift in Sources */,
