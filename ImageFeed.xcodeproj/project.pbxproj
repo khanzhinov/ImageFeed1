@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1500A6332A79679F00E37793 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1500A6322A79679F00E37793 /* ProfileViewController.swift */; };
 		1519FA5F2AC20226002E90CF /* WebViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519FA5E2AC20226002E90CF /* WebViewProtocol.swift */; };
+		1519FA612AC2069E002E90CF /* AuthHelperProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519FA602AC2069E002E90CF /* AuthHelperProtocol.swift */; };
+		1519FA632AC207E7002E90CF /* AuthConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1519FA622AC207E7002E90CF /* AuthConfiguration.swift */; };
 		1522F1532A7590BD00B71A17 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F1522A7590BD00B71A17 /* AppDelegate.swift */; };
 		1522F1552A7590BD00B71A17 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1522F1542A7590BD00B71A17 /* SceneDelegate.swift */; };
 		1522F15A2A7590BD00B71A17 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1522F1582A7590BD00B71A17 /* Main.storyboard */; };
@@ -22,7 +24,7 @@
 		156649102AB3899A00D85000 /* Photos.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1566490F2AB3899A00D85000 /* Photos.swift */; };
 		156649122AB38A1300D85000 /* ImagesListService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156649112AB38A1300D85000 /* ImagesListService.swift */; };
 		156649142AB38BD300D85000 /* DateService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 156649132AB38BD300D85000 /* DateService.swift */; };
-		157B30A32A8FA741002A7DDA /* Constans.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A22A8FA741002A7DDA /* Constans.swift */; };
+		157B30A32A8FA741002A7DDA /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A22A8FA741002A7DDA /* Constants.swift */; };
 		157B30A62A96108C002A7DDA /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A52A96108C002A7DDA /* AuthViewController.swift */; };
 		157B30A82A9614A2002A7DDA /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157B30A72A9614A2002A7DDA /* WebViewController.swift */; };
 		157DCBEE2ABB61F500B034D0 /* TranslucentGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 157DCBED2ABB61F500B034D0 /* TranslucentGradient.swift */; };
@@ -53,6 +55,8 @@
 /* Begin PBXFileReference section */
 		1500A6322A79679F00E37793 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		1519FA5E2AC20226002E90CF /* WebViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewProtocol.swift; sourceTree = "<group>"; };
+		1519FA602AC2069E002E90CF /* AuthHelperProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHelperProtocol.swift; sourceTree = "<group>"; };
+		1519FA622AC207E7002E90CF /* AuthConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthConfiguration.swift; sourceTree = "<group>"; };
 		1522F14F2A7590BD00B71A17 /* ImageFeed.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ImageFeed.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1522F1522A7590BD00B71A17 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1522F1542A7590BD00B71A17 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +72,7 @@
 		1566490F2AB3899A00D85000 /* Photos.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photos.swift; sourceTree = "<group>"; };
 		156649112AB38A1300D85000 /* ImagesListService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagesListService.swift; sourceTree = "<group>"; };
 		156649132AB38BD300D85000 /* DateService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateService.swift; sourceTree = "<group>"; };
-		157B30A22A8FA741002A7DDA /* Constans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constans.swift; sourceTree = "<group>"; };
+		157B30A22A8FA741002A7DDA /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		157B30A52A96108C002A7DDA /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
 		157B30A72A9614A2002A7DDA /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		157DCBED2ABB61F500B034D0 /* TranslucentGradient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslucentGradient.swift; sourceTree = "<group>"; };
@@ -181,6 +185,7 @@
 			isa = PBXGroup;
 			children = (
 				1519FA5E2AC20226002E90CF /* WebViewProtocol.swift */,
+				1519FA602AC2069E002E90CF /* AuthHelperProtocol.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -196,7 +201,8 @@
 		15B811762AA8986C000F662C /* API */ = {
 			isa = PBXGroup;
 			children = (
-				157B30A22A8FA741002A7DDA /* Constans.swift */,
+				157B30A22A8FA741002A7DDA /* Constants.swift */,
+				1519FA622AC207E7002E90CF /* AuthConfiguration.swift */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -356,7 +362,7 @@
 			files = (
 				1522F1672A75919100B71A17 /* ImagesListViewController.swift in Sources */,
 				15FBAB7D2AA8864900E62B16 /* AlertPresenter.swift in Sources */,
-				157B30A32A8FA741002A7DDA /* Constans.swift in Sources */,
+				157B30A32A8FA741002A7DDA /* Constants.swift in Sources */,
 				1522F1692A7591A100B71A17 /* ImagesListCell.swift in Sources */,
 				15FBAB8C2AA88AC900E62B16 /* UIColor.swift in Sources */,
 				15FBAB8A2AA88A7700E62B16 /* AlertModel.swift in Sources */,
@@ -365,7 +371,9 @@
 				156649122AB38A1300D85000 /* ImagesListService.swift in Sources */,
 				15CE266D2A9FC79800641DE3 /* SplashViewController.swift in Sources */,
 				1500A6332A79679F00E37793 /* ProfileViewController.swift in Sources */,
+				1519FA612AC2069E002E90CF /* AuthHelperProtocol.swift in Sources */,
 				15FBAB6E2AA85CF300E62B16 /* UserResult.swift in Sources */,
+				1519FA632AC207E7002E90CF /* AuthConfiguration.swift in Sources */,
 				15CE266A2A9FC5B300641DE3 /* OAuth2TokenStorage.swift in Sources */,
 				15CE26762A9FC97A00641DE3 /* URLRequestExtension.swift in Sources */,
 				157B30A62A96108C002A7DDA /* AuthViewController.swift in Sources */,
