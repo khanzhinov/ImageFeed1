@@ -68,12 +68,12 @@ final class ProfileService {
 }
 
 private extension ProfileService {
-    // Вспомогательная функция для получения своего профиля
+   
     var selfProfileRequest: URLRequest? {
         URLRequest.makeHTTPRequest(path: "/me", httpMethod: Keys.httpMethodGet)
     }
 }
-// Вспомогательная функция для получения своего профиля
+
 
 struct ProfileResult: Codable {
     let username: String
@@ -89,7 +89,7 @@ struct ProfileResult: Codable {
     }
 }
 
-struct Profile {
+public struct Profile {
     let username: String
     let name: String
     var loginName: String {
