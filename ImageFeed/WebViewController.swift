@@ -40,7 +40,7 @@ final class WebViewViewController: UIViewController & WebViewViewControllerProto
     }
 }
 
-extension WebViewViewController: WKNavigationDelegate {  //OK
+extension WebViewViewController: WKNavigationDelegate {  
     func webView(
         _ webView: WKWebView,
         decidePolicyFor navigationAction: WKNavigationAction,
