@@ -5,6 +5,7 @@
 //  Created by Валерия Медведева on 30.08.2023.
 //
 
+
 import SwiftKeychainWrapper
 import Foundation
 
@@ -22,7 +23,11 @@ class OAuth2TokenStorage {
                 KeychainWrapper.standard.removeObject(forKey: Keys.token.rawValue)
                 return
             }
-            _ = KeychainWrapper.standard.set(newValue, forKey: Keys.token.rawValue)
+            let isSuccess = KeychainWrapper.standard.set(newValue, forKey: Keys.token.rawValue)
+            guard isSuccess else {
+                return
+            }
         }
     }
 }
+

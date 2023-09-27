@@ -8,6 +8,13 @@
 import UIKit
 
 final class TabBarController: UITabBarController {
+    
+    private struct Keys {
+        static let main = "Main"
+        static let imagesListViewController = "ImagesListViewController"
+        static let tabBarProfileImageName = "tab_profile_active"
+    }
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         let storyboard = UIStoryboard(name: "Main", bundle: .main)
