@@ -1,10 +1,3 @@
-//
-//  ImageFeedTests.swift
-//  ImageFeedTests
-//
-//  Created by Валерия Медведева on 27.09.2023.
-//
-
 
 
 import XCTest
@@ -92,4 +85,3 @@ final class WebViewTests: XCTestCase {
         
     }
 }
-

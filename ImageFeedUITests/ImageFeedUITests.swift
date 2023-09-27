@@ -1,6 +1,5 @@
 
 import XCTest
-import ImageFeed
 
 
 final class ImageFeedUITests: XCTestCase {
@@ -32,9 +31,6 @@ final class ImageFeedUITests: XCTestCase {
         let passwordTextField = webView.descendants(matching: .secureTextField).element
         XCTAssertTrue(passwordTextField.waitForExistence(timeout: 8))
         
-//        passwordTextField.tap()
-//
-//        XCUIApplication().toolbars.buttons["Done"].tap()
         passwordTextField.tap()
         sleep(2)
         //указать пароль
@@ -84,60 +80,4 @@ final class ImageFeedUITests: XCTestCase {
         XCTAssertTrue(app.buttons["Authenticate"].exists)
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//    func testAuth() throws {
-//        app.buttons["Authenticate"].tap()
-//        let webView = app.webViews["UnsplashWebView"]
-//        XCTAssertTrue(webView.waitForExistence(timeout: 7))
-//        let loginTextField = webView.descendants(matching: .textField).element
-//        XCTAssertTrue(loginTextField.waitForExistence(timeout: 5))
-//
-//        loginTextField.tap()
-//        // указать почту
-//        loginTextField.typeText("artkamadi@gmail.com")
-//        webView.tap()
-//        webView.swipeUp()
-//        let passwordTextField = webView.descendants(matching: .secureTextField).element
-//        XCTAssertTrue(passwordTextField.waitForExistence(timeout: 5))
-//
-//        passwordTextField.tap()
-//        //указать пароль
-//        passwordTextField.typeText("Caspersetdd2023")
-//        webView.tap()
-//        webView.swipeUp()
-//
-//        webView.buttons["Login"].tap()
-//
-//        let tablesQuery = app.tables
-//        let cell = tablesQuery.children(matching: .cell).element(boundBy: 0)
-//
-//        XCTAssertTrue(cell.waitForExistence(timeout: 8))
-//    }
 

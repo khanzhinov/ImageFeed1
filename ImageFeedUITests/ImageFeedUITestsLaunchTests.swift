@@ -1,9 +1,11 @@
 
 
 import XCTest
-import ImageFeed
 
 final class ImageFeedUITestsLaunchTests: XCTestCase {
+    
+    let app = XCUIApplication()
+    
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
              true
          }
@@ -11,9 +13,9 @@ final class ImageFeedUITestsLaunchTests: XCTestCase {
          override func setUpWithError() throws {
              continueAfterFailure = false
          }
-
+    
          func testLaunch() throws {
-             let app = XCUIApplication()
+             
              app.launch()
 
             
