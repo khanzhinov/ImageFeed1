@@ -13,7 +13,7 @@ protocol ImagesListCellDelegate: AnyObject {
     func imageListCellDidTapLike(_ cell: ImagesListCell)
 }
 
-final class ImagesListCell: UITableViewCell {
+public final class ImagesListCell: UITableViewCell {
     
     @IBOutlet weak var cellImage: UIImageView!
     @IBOutlet weak var likeButton: UIButton!
@@ -36,7 +36,7 @@ final class ImagesListCell: UITableViewCell {
     static let reuseIdentifier = Keys.reuseIdentifierName
     weak var delegate: ImagesListCellDelegate?
     
-    override func prepareForReuse() {
+    public override func prepareForReuse() {
         super.prepareForReuse()
         removeGradient()
         cellImage.kf.cancelDownloadTask()
@@ -46,10 +46,7 @@ final class ImagesListCell: UITableViewCell {
 extension ImagesListCell {
     func configCell(using photoStringURL: String, with indexPath: IndexPath, date: Date?) -> Bool {
         gradientBackGroundFor(backgroundLabel)
-//
-            dateLabel.text = DateService.shared.stringFromDate(date: date)
-//
-        
+        dateLabel.text = DateService.shared.stringFromDate(date: date)
         var status = false
         
         guard let photoURL = URL(string: photoStringURL) else {
@@ -130,3 +127,5 @@ extension ImagesListCell {
         dateLabel.isHidden = false
     }
 }
+
+

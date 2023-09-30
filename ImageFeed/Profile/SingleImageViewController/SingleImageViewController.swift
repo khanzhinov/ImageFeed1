@@ -30,12 +30,12 @@ final class SingleImageViewController: UIViewController {
         super.viewDidLoad()
         
         alertPresenter = AlertPresenter(delagate: self)
-
+        
         scrollView.minimumZoomScale = 0.1
         scrollView.maximumZoomScale = 1.25
         
         UIBlockingProgressHUD.show()
-
+        
         downloadImage()
     }
     
@@ -53,7 +53,7 @@ final class SingleImageViewController: UIViewController {
     
     @IBAction func didTapShareButton(_ sender: UIButton) {
         present(activityController, animated: true, completion: nil)
-
+        
     }
     
     //MARK: - Variables
@@ -81,42 +81,42 @@ final class SingleImageViewController: UIViewController {
     }
     
     func downloadImage() {
-             imageView.kf.setImage(with: largeImageURL) { [weak self] result in
-                 UIBlockingProgressHUD.dismiss()
-
-                 guard let self = self else { return }
-
-                 switch result {
-                     case .success(let imageResult):
-                         self.rescaleAndCenterImageInScrollView(image: imageResult.image)
-                         activityController = UIActivityViewController(
-                             activityItems: [imageResult.image as Any],
-                             applicationActivities: nil
-                         )
-                     case .failure:
-                     self.showError()
-                 }
-             }
-         }
-
-         func showError() {
-             let alert = AlertModel(title: "Что-то пошло не так.",
-                                             message: "Попробовать ещё раз?",
-                                             buttonText: "Не надо",
-                                             completion: { [weak self] in
-                          guard let self = self else { return }
-                          self.dismiss(animated: true)
-                      },
-                                             secondButtonText: "Повторить",
-                                             secondCompletion: { [weak self] in
-                          guard let self = self else { return }
-
-                          UIBlockingProgressHUD.show()
-                          downloadImage()
-                      })
-
-                      alertPresenter?.show(alert)
-         }
+        imageView.kf.setImage(with: largeImageURL) { [weak self] result in
+            UIBlockingProgressHUD.dismiss()
+            
+            guard let self = self else { return }
+            
+            switch result {
+            case .success(let imageResult):
+                self.rescaleAndCenterImageInScrollView(image: imageResult.image)
+                activityController = UIActivityViewController(
+                    activityItems: [imageResult.image as Any],
+                    applicationActivities: nil
+                )
+            case .failure:
+                self.showError()
+            }
+        }
+    }
+    
+    func showError() {
+        let alert = AlertModel(title: "Что-то пошло не так.",
+                               message: "Попробовать ещё раз?",
+                               buttonText: "Не надо",
+                               completion: { [weak self] in
+            guard let self = self else { return }
+            self.dismiss(animated: true)
+        },
+                               secondButtonText: "Повторить",
+                               secondCompletion: { [weak self] in
+            guard let self = self else { return }
+            
+            UIBlockingProgressHUD.show()
+            downloadImage()
+        })
+        
+        alertPresenter?.show(alert)
+    }
 }
 extension SingleImageViewController: UIScrollViewDelegate {
     func viewForZooming(in scrollView: UIScrollView) -> UIView? {

@@ -45,14 +45,14 @@ final class OAuth2Service {
                 guard let self = self else { return }
                 
                 switch result {
-                    case .success(let body):
-                        let authToken = body.accessToken
-                        self.authToken = authToken
-                        completion(.success(authToken))
-                        self.task = nil
-                    case .failure(let error):
-                        completion(.failure(error))
-                        self.lastCode = nil
+                case .success(let body):
+                    let authToken = body.accessToken
+                    self.authToken = authToken
+                    completion(.success(authToken))
+                    self.task = nil
+                case .failure(let error):
+                    completion(.failure(error))
+                    self.lastCode = nil
                 }
             }
         }
@@ -65,32 +65,6 @@ final class OAuth2Service {
 
 //MARK: - Private functions
 private extension OAuth2Service {
-
-    /// Вспомогательная функция для получения картинок
-    func photosRequest(page: Int, perPage: Int) -> URLRequest? {
-        URLRequest.makeHTTPRequest(
-            path: "/photos"
-            + "?page=\(page)"
-            + "&&per_page=\(perPage)",
-            httpMethod: "GET"
-        )
-    }
-    
-    /// Вспомогательная функция для получения лайкнутых картинок
-    func likeRequest(photoId: String) -> URLRequest? {
-        URLRequest.makeHTTPRequest(
-            path: "/photos/\(photoId)/like",
-            httpMethod: "POST"
-        )
-    }
-    
-    /// Вспомогательная функция для получения не лайкнутых картинок
-    func unlikeRequest(photoId: String) -> URLRequest? {
-        URLRequest.makeHTTPRequest(
-            path: "/photos/\(photoId)/like",
-            httpMethod: "DELETE"
-        )
-    }
     
     private func authTokenRequest(code: String) -> URLRequest? {
         URLRequest.makeHTTPRequest(
