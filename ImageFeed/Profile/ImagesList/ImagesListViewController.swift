@@ -100,7 +100,7 @@ extension ImagesListViewController: UITableViewDelegate {
             presenter?.fetchPhotosNextPage(indexPath: indexPath)
         }
         
-        //        presenter?.fetchPhotosNextPage(indexPath: indexPath)
+        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {

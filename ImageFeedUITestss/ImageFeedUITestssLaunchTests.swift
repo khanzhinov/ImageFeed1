@@ -6,7 +6,6 @@
 //
 
 import XCTest
-//import ImageFeed
 
 final class ImageFeedUITestsLaunchTests: XCTestCase {
     override class var runsForEachTargetApplicationUIConfiguration: Bool {
